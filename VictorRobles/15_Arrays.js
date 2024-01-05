@@ -18,3 +18,24 @@ ordenarPorLongitud([
   "ahora"
 ]);
 */
+
+function ordenarPorLongitud(array) {
+  return array.sort((a , b) => a.length - b.length);
+}
+
+console.log(
+  ordenarPorLongitud([
+    "Hola",
+    "soy",
+    "Víctor Robles",
+    "como",
+    "estas",
+    "hoy",
+    "amigo",
+    "yo",
+    "voy",
+    "a",
+    "estudiar",
+    "ahora",
+  ])
+);
