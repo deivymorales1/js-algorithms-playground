@@ -13,19 +13,23 @@ Devuelve: [
 
 */
 
-function random(numero) {
+function generarMatriz(numero) {
+  // Crear un array vacio
   let newMat = [];
-  const mul = numero * numero;
+  // Variable acumuladora
+  let numAct = 1;
 
-  // Recorro el array general
-  for (let i = 0; i < numero; i++) {
+  // Bucle para generar las filas
+  for (let fila = 0; fila < numero; fila++) {
+    // Crear una nueva fila con un push
     newMat.push([]);
-    // Recorro el array por el valor original
-    for (let j = 0; j < numero; j++) {
-      newMat[i].push(Math.floor(Math.random() * mul) + 1);
+    // Bucle para genera cada numero de la matriz
+    for (let columna = 0; columna < numero; columna++) {
+      // Agregar numero a la fila actual
+      newMat[fila].push(numAct++);
     }
   }
-  console.log(newMat);
+  return newMat;
 }
 
-random(4);
+console.log(generarMatriz(3));
