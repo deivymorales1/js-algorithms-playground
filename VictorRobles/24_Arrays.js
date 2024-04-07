@@ -15,7 +15,7 @@ function renombrarArchivos(archivos) {
   // Recorrro el array
   for (let i = 0; i < archivos.length; i++) {
     let archivo = archivos[i];
-    // Verificar si el nombre dle archivo ya existe
+    // Verificar si el nombre del archivo ya existe
     if (resul.includes(archivo)) {
       contador[archivo] = (contador[archivo] || 0) + 1;
       // Generamos el nuevo nombre para el archivo
