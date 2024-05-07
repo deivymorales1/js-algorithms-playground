@@ -12,13 +12,10 @@ function invertirEntero(entero){
   // Invertir cadena
   newEntero = newEntero.split("").reverse().join("")
   // Convertir de nuevo a numero y restaurar el signo -
-  newEntero = entero < 0 ? "-" + newEntero : newEntero;
-
-  return newEntero
-  
+  return newEntero = entero < 0 ? "-" + newEntero : newEntero;
 
 }
 
-console.log(invertirEntero(123));
+console.log(invertirEntero(-123));
 
 
