@@ -41,27 +41,3 @@ console.log(
 );
 
 
-/**
- * function contarElementos(phrase) {
-  count = {};
-
-  // Limpiar el string
-  phrase.replaceAll("-", "").replaceAll("_", "");
-
-  // Iteramos sobre el string
-  for (let i = 0; i < phrase.length; i++) {
-    // Modificamos la variable contador
-    count = (phrase[i] || 0) + 1;
-  }
-  return count;
-}
-
-console.log(
-  contarElementos(
-    "pc -ordenador _computadora consola- ps5 theLastOfUs ordenador"
-  )
-);
-5;
- * 
- * 
- */
