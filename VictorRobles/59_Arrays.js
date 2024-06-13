@@ -39,14 +39,3 @@ function contarBumeranes(numbers){
 let bum = contarBumeranes([2,1,2,3,3,4,2,4]);
 console.log('Hay', bum[0] , 'bumeranes: ' , bum[1])
 
-
-
-/*   // Iterar a través del array
-  for (let i = 0; i < numbers.length - 2; i++) {
-    // Verificar si la subsecuencia actual es un bumerán
-    if (numbers[i] === numbers[i + 2] && numbers[i] !== numbers[i + 1]) {
-      // Añadir el bumerán al array de resultados
-      bumeranes.push([numbers[i], numbers[i + 1], numbers[i + 2]]);
-    }
-  }
- */
